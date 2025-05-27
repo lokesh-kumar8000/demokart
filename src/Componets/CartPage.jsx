@@ -112,7 +112,7 @@ const AddTo = () => {
                   </button>
                 </div>
               </div>
-              <div className=" text-center font-semibold col-span-1 capitalize text-[16px] sm:text-xl">
+              <div className=" text-center font-semibold col-span-1 capitalize text-[13px] sm:text-xl">
                 {" "}
                 $ {Math.floor(item.price) * qty}{" "}
               </div>
