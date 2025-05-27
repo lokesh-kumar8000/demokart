@@ -8,13 +8,13 @@ import About from "./About";
 
 function Home() {
   return (
-    <>
+    <div className=" overflow-x-hidden " >
       <Hero />
       <ShopWith />
       <OurProducts/> 
       <Subscribe/> 
       <Revews/> 
-    </>
+    </div>
   );
 }
 
