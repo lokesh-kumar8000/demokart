@@ -1,0 +1,91 @@
+@import "tailwindcss"; 
+
+
+.contianer{
+    max-width: 1300px; 
+}
+
+.slick-dots {
+  text-align: left !important; 
+  padding-left: 10px;          
+}
+
+/* .slick-dots li button{
+    color: #ffff !important;
+} */
+
+.slick-dots li button:before {
+  padding: 10px 0px;
+  font-size: 15px!important;
+  transition: 0.3s;
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 25px!important; 
+
+  color: #ff4d4d !important;
+}
+
+.our:hover .king{
+    bottom: 0px; 
+}
+
+
+
+.slick-prev, .slick-next {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev::before {
+  position: absolute;
+  left: 25px;
+  z-index: 9;
+  font-size: 20px;
+  color: rgb(251, 0, 0)!important; 
+}
+.slick-next::before{
+  position: absolute;
+  right: 25px; 
+  z-index: 9;
+  font-size: 20px;
+  color: rgb(251, 0, 0)!important;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  animation: l14 4s infinite;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: red red #0000 #0000;
+  mix-blend-mode: darken;
+  animation: l14 1s infinite linear;
+}
+.loader::after {
+  border-color: #0000 #0000 blue blue;
+  animation-direction: reverse;
+}
+@keyframes l14{ 
+  100%{transform: rotate(1turn)} 
+}
