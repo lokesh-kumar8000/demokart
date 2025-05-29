@@ -18,7 +18,7 @@ function Hero() {
   const hero = [
     {
       top: "Sale 20% Off",
-      title: "On Everything",
+      title: "On Everything", 
       pera: "   Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatisdelectus repellat modi impedit sequi.",
     },
     {
@@ -34,7 +34,7 @@ function Hero() {
   ];
   return (
     <div>
-      <div className=" bg-[url(Images/slider-bg.jpg)] bg-cover lg:bg-fixed bg-center   w-full py-10 px-4 md:pt-[90px] md:pb-19 md:ps-10">
+      <div className=" hero-bg   w-full py-10 px-4 md:pt-[90px] md:pb-19 md:ps-10">
         <div className=" contianer mx-auto ">
           <Slider {...settings}>
               {hero.map((item, index) => {

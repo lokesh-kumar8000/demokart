@@ -89,3 +89,8 @@
 @keyframes l14{ 
   100%{transform: rotate(1turn)} 
 }
+
+.hero-bg{
+  background: url('/Images/slider-bg.jpg'); 
+  background-size: cover; 
+}
